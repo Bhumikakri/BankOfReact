@@ -1,0 +1,14 @@
+.rangeContainer{
+    /* border: 2px solid green; */
+    width: 100%;
+    margin-top: 1rem;
+}
+.rangeContainer input{
+    width: 90%;
+}
+.ranges{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    color: rgb(80, 79, 79);
+}

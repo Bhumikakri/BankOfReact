@@ -1,23 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import Header  from "./header/Header";
+import Slider from "./Slider/slider";
+import Dropdown from './Selector/selector';
+import PieChart from './piechat/Piechart'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header/>
+      <div className='allSliders'>
+      <Slider title="Home Value" minrang="1000" maxrang="10000" sign="$"/>
+      <Slider title="Down Payment" minrang="0" maxrang="10000" sign="$"/>
+      <Slider title="Loan Amount" minrang="0" maxrang="10000"sign="$"/>
+      <Slider title="Interest Rate" minrang="2" maxrang="18" sign="%"/>
+      <Dropdown/>
+      </div>
+      
     </div>
   );
 }
